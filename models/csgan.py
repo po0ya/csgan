@@ -38,18 +38,7 @@ class CSGAN(object):
                  output_height=64, output_width=64, z_dim=100, gf_dim=64, df_dim=64, gfc_dim=1024,
                  dfc_dim=1024, c_dim=3, dataset_name='default', checkpoint_dir=None, cfg=None):
         """The constructor of CSGAN class. An object containing a computation graph corresponding to a loaded config is
-        created.
-
-        Args:
-          sess: TensorFlow session
-          batch_size: The batch size. Should be specified before training.
-          z_dim: (optional) Dimension of the latent space (z). [100]
-          gf_dim: (optional) Dimension of generator filters in the first convolutional layer. [64]
-          df_dim: (optional) Dimension of discriminator filters in the first convolutional layer. [64]
-          gfc_dim: (optional) Dimension of generator units for the fully-connected layer. [1024]
-          dfc_dim: (optional) Dimension of discriminator units for the fully-connected layer. [1024]
-          c_dim: (optional) Number of image channels. For grayscale input, set to 1. [3]
-        """
+        created."""
         self.cache_path = 'data/cache'
         ensure_dir(self.cache_path)
 
