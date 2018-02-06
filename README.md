@@ -1,7 +1,7 @@
 # Task-aware Compressed Sensing with Generative Adversarial Networks
 
-This repository contains the implementation of the paper:
-Task-aware Compressed Sensing with Generative Adversarial Networks
+This repository contains the implementation of our AAAI-18 paper:
+[**Task-aware Compressed Sensing with Generative Adversarial Networks**](https://arxiv.org/abs/1802.01284)
 
 If you find this code or the paper useful, please consider citing:
 ```
