@@ -1,0 +1,33 @@
+GPU:
+  val: 0
+  doc: "The GPU id"
+BETA1:
+  val: 0.5
+  doc: "Momentum term of adam [0.5]"
+INPUT_TRANSFORM_TYPE:
+  val: 0
+  doc: "Type of the input normalization."
+GENERATOR_TYPE:
+  val: "conv"
+  doc: "Type of the generator [conv,fc]"
+JUST_CS:
+  val: False
+  doc: "Train just on measurements [False]"
+CS_LEARNING:
+  val: False
+  doc: "CSGAN training [False]"
+IS_CROP:
+  val: False
+  doc: "Whether to center crop [False]"
+DPRIOR_WEIGHT:
+  val: 1.0
+  doc: "Discriminator regularizer"
+DISC_TYPE:
+  val: 'conv'
+  doc: 'Disc type'
+CL_LR:
+  val: 0.05
+  doc: 'LR for cl training'
+MECN_LR:
+  val: 0.01
+  doc: 'MENC LR'

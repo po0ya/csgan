@@ -1,0 +1,93 @@
+DATASET:
+  val: 'celeba'
+  doc: "Training dataset"
+TRAIN_SPLIT:
+  val: 'train'
+  doc: 'Training split'
+Z_DIM:
+  val: 100
+  doc: "Dimension of latent variables"
+C_DIM:
+  val: 3
+  doc: "Color channel dim"
+IS_CROP:
+  val: True
+  doc: "Whether we are center cropping"
+EPOCH:
+  val: 25
+  doc: Epoch to train [25]
+LEARNING_RATE:
+  val: 0.0002
+  doc: Learning rate of for adam [0.0002]
+BATCH_SIZE:
+  val: 0
+  doc: The size of batch images [64]
+INPUT_HEIGHT:
+  val: 108
+  doc: "The size of image to use (will be center cropped). [108]"
+INPUT_WIDTH:
+  val: 64
+  doc: "The size of the output images to produce. If None, same value as output_height [None]"
+OUTPUT_HEIGHT:
+  val: 64
+  doc: "The size of the output images to produce [64]"
+OUTPUT_WIDTH:
+  val: 64
+  doc: "The size of the output images to produce. If None, same value as output_height [None]"
+CHECKPOINT_DIR:
+  val: "output/default"
+  doc: "Directory name to save the checkpoints [checkpoint]"
+SAMPLE_DIR:
+  val: "debug/default"
+  doc: "Directory name to save the image samples [samples]"
+CS_LEARNING:
+  val: True
+  doc: "Whether to train in CS setting"
+MLOSS1_WEIGHT:
+  val: 0.0
+  doc: "The weight of l1 loss in csgan"
+MLOSS2_WEIGHT:
+  val: 1.0
+  doc: "The weight of l2 loss in csgan"
+ZPRIOR_WEIGHT:
+  val: 0.1
+  doc: "The z-prior weights"
+CS_LEARNING_RATE:
+  val: 1.0
+  doc: "Learning rate for latent variable estimation"
+CS_MOMENTUM:
+  val: 0.9
+  doc: "Momentum of ADAM"
+CS_MAX_UPDATE_ITER:
+  val: 20
+  doc: "MAX UP ITER"
+CS_NUM_RANDOM_RESTARTS:
+  val: 1
+  doc: "Number of random restarts for latent codes"
+CS_NUM_MEASUREMENTS:
+  val: 500
+  doc: "Number of measurements for CS"
+CS_BATCH_SIZE:
+  val: 64
+  doc: "Batch size for CS [20]"
+IMAGE_SHAPE:
+  val:  [64,64,3]
+  doc: "Image dimension"
+CS_NOISE_STD:
+  val: 0.01
+  doc: "The added noise for measurements"
+CS_DECAY_LR:
+  val: False
+  doc: "Decay learning rate for CS"
+GENERATOR_TYPE:
+  val: 'conv'
+  doc: 'Architecture of the generator'
+INPUT_TRANSFORM_TYPE:
+  val: 0
+  doc: 'Type of input normalization: 0 for -1 to 1, 1: for 0 to 1'
+DISC_TYPE:
+  val: 'conv'
+  doc: 'Discriminator type'
+SUPERRES_FACTOR:
+  val: 4
+  doc: 'Super resolution factor'
