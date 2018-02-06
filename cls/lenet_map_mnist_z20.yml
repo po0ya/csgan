@@ -1,0 +1,33 @@
+VERBOSE:
+  val: True
+  doc: "verbose"
+NETWORK_NAME:
+  val: "lenet_map"
+  doc: "mlp, lenet, or lenet_map"
+DATASET:
+  val: 'mnist'
+  doc: "Training dataset"
+NUM_CLASSES:
+  val: 10
+  doc: "Number of classes"
+CLASSIFIER_TYPE:
+  val: 'nn'
+  doc: "Type of classifier to be used: svm, linear-svm, lmnn, logistic, knn, or nn"
+INITIAL_LR:
+  val: 0.05
+  doc: "Initial learning rate"
+OPTIMIZER_TYPE:
+  val: "decay_sgd"
+  doc: "decay_sgd, fixed_lr_sgd, adam"
+BATCH_SIZE:
+  val: 50
+  doc: "Batch size"
+NUM_EPOCHS:
+  val: 100
+  doc: "Number of training epochs"
+INPUT_DIM:
+  val: 20
+  doc: "Input dimension"
+USE_BATCH_NORM:
+  val: True
+  doc: "Whether or not to use batch normalization on the convolutional layers"

@@ -1,0 +1,33 @@
+VERBOSE:
+  val: True
+  doc: "verbose"
+DATASET:
+  val: 'mnist'
+  doc: "Training dataset"
+NUM_CLASSES:
+  val: 10
+  doc: "Number of classes"
+CLASSIFIER_TYPE:
+  val: 'knn'
+  doc: "Type of classifier to be used: svm, linear-svm, lmnn, logistic, or knn"
+NUM_NEIGHBORS:
+  val: 50
+  doc: "Number of neighbors to consider."
+WEIGHTS:
+  val: 'uniform'
+  doc: "'uniform' or 'distance' (weigh points by the inverse of their distance)"
+ALGORITHM:
+  val: 'auto'
+  doc: "'ball_tree', 'kd_tree', 'brute' or 'auto' (will decide the most appropriate algorithm based on training data)"
+LEAF_SIZE:
+  val: 30
+  doc: "Leaf size passed to BallTree or KDTree"
+METRIC:
+  val: 'minkowski'
+  doc: "The distance metric to use for the tree"
+POWER:
+  val: 2
+  doc: "Power parameter for the Minkowski metric. p = 1 for l1, p = 2 for l2"
+NUM_JOBS:
+  val: 1
+  doc: "Number of parallel jobs to run for neighbors search. (-1 for nb of CPU cores)"
