@@ -69,7 +69,11 @@ This will create an output directory based on the provided config files and flag
 
 To save the reconstructions for a dataset, run:
 
-    $ python main.py --cfg experiments/cfgs/csgan/<cfg_file>.yml --reconstruction_res --cs_learning_rate <lr> --cs_max_update_iter <max_update_iter> --cs_num_random_restarts <rr>
+    $ python main.py --cfg experiments/cfgs/csgan/<cfg_file>.yml \
+                     --reconstruction_res \
+                     --cs_learning_rate <lr> \
+                     --cs_max_update_iter <max_update_iter> \
+                     --cs_num_random_restarts <rr>
 
 Refer to [main.py](main.py) and [configs](experiments/cfgs) for more information about flags.
 
