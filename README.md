@@ -149,11 +149,9 @@ To reproduce the results reported in the paper refer to [experiments/scripts](ex
 The corresponding hyper-parameters for all scripts can be found/set in [experiments/cfgs](experiments/cfgs)
 
 ## Training algorithms
-One iteration of the task-aware GAN training algorithm when only non-compressed (original) training samples are used.
-![alt text](figures/csgan_algo1.pdf "Algorithm 1")
-
-One iteration of the task-aware GAN training algorithm when a combination of non-compressed (original) and compressed training samples are used.
-![alt text](figures/csgan_algo2.pdf "Algorithm 2")
+Left: One iteration of the task-aware GAN training algorithm when only non-compressed (original) training samples are used.
+Right: One iteration of the task-aware GAN training algorithm when a combination of non-compressed (original) and compressed training samples are used.
+![alt text](figures/csgan_algos.png "CSGAN Training Algorithms")
 
 ## Some results
 CelebA super-resolution results. Top row: original image; middle row: blurred image; bottom row: reconstructed image.
