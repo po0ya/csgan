@@ -21,7 +21,8 @@ year={2018}
     - [Training a model](#training-a-model)
     - [Classification](#classification)
 4. [Reproducing paper results](#reproducing-paper-results)
-5. [Some results](#some-results)
+5. [Diagrams of training algorithms](#training-algorithms)
+6. [Some results](#some-results)
 
 ## Requirements
 
@@ -147,6 +148,12 @@ To reproduce the results reported in the paper refer to [experiments/scripts](ex
 
 The corresponding hyper-parameters for all scripts can be found/set in [experiments/cfgs](experiments/cfgs)
 
+## Training algorithms
+One iteration of the task-aware GAN training algorithm when only non-compressed (original) training samples are used.
+![alt text](figures/csgan_algo1.pdf "Algorithm 1")
+
+One iteration of the task-aware GAN training algorithm when a combination of non-compressed (original) and compressed training samples are used.
+![alt text](figures/csgan_algo2.pdf "Algorithm 2")
 
 ## Some results
 CelebA super-resolution results. Top row: original image; middle row: blurred image; bottom row: reconstructed image.
