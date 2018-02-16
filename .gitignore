@@ -18,7 +18,6 @@
 /lib/build/*
 matplotlibrc
 *.out
-*.pdf
 *.esp
 *.mat
 *.pckl
